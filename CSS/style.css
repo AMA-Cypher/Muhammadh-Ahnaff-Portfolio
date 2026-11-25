@@ -278,57 +278,131 @@ a {
 
 
 /* =================================
-   6. Profile Image
+   6. Glowing Circular Profile
 ================================= */
 
 .hero-image {
     flex: 0 0 380px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image-border {
+/* Outer glowing circle */
+
+.profile-glow {
+    width: 350px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+
+    background: conic-gradient(
+        from 0deg,
+        #0ea5e9,
+        #2563eb,
+        #06b6d4,
+        #1d4ed8,
+        #0ea5e9
+    );
+
+    box-shadow:
+        0 0 15px #2563eb,
+        0 0 35px rgba(14, 165, 233, 0.5),
+        0 0 65px rgba(37, 99, 235, 0.25);
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+/* Inner profile image */
+
+.profile-circle {
     width: 100%;
-    height: 440px;
-    padding: 8px;
-    border: 2px solid #3b82f6;
-    border-radius: 20px;
+    height: 100%;
+    border-radius: 50%;
     overflow: hidden;
-    background-color: #111c32;
+
+    background: var(--bg-primary);
+    border: 4px solid var(--bg-primary);
 }
 
-.image-border img {
+.profile-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 14px;
+    object-position: center 25%;
+    display: block;
+    border-radius: 50%;
 }
 
-.image-placeholder {
-    display: none;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #94a3b8;
-    font-size: 15px;
+/* Hover effect */
+
+.profile-glow:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 0 20px #2563eb,
+        0 0 45px rgba(14, 165, 233, 0.7),
+        0 0 80px rgba(37, 99, 235, 0.35);
 }
+
+/* Always Learning badge */
 
 .floating-text {
     position: absolute;
-    bottom: 25px;
-    left: -35px;
-    background-color: #1e293b;
+    bottom: 20px;
+    left: -15px;
+
     padding: 13px 20px;
-    border-radius: 8px;
-    border: 1px solid #334155;
-    font-size: 13px;
-    color: #e2e8f0;
+    border-radius: 30px;
+
+    background: rgba(17, 28, 50, 0.95);
+    border: 1px solid #2563eb;
+
+    color: #ffffff;
+    font-size: 14px;
+
+    box-shadow: 0 0 18px rgba(37, 99, 235, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .floating-text span {
-    color: #3b82f6;
-    margin-right: 5px;
+    color: #06b6d4;
+    margin-right: 6px;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+    .hero-image {
+        flex: 0 0 320px;
+    }
+
+    .profile-glow {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-image {
+        width: 100%;
+        max-width: 350px;
+        flex: none;
+        margin: 20px auto;
+    }
+
+    .profile-glow {
+        width: 280px;
+        height: 280px;
+    }
+
+    .floating-text {
+        left: -5px;
+        bottom: 10px;
+    }
 }
 
 
@@ -340,7 +414,7 @@ a {
 .footer {
     background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
-    padding: 28px 8%;
+    padding: 15px 10%;
     color: var(--text-secondary);
     font-size: 13px;
 }
