@@ -186,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 // =================================
 // Dark Mode / Light Mode Toggle
 // =================================
@@ -193,49 +194,57 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     const themeToggle = document.getElementById("themeToggle");
+
+    if (!themeToggle) return;
+
     const themeIcon = themeToggle.querySelector("i");
+
+    if (!themeIcon) return;
+
+    // Update icon based on selected theme
+    function updateThemeIcon(isLightMode) {
+
+        if (isLightMode) {
+            // Light mode: Show moon icon
+            themeIcon.className = "fa-solid fa-moon";
+            themeToggle.setAttribute("aria-label", "Switch to dark mode");
+
+        } else {
+            // Dark mode: Show sun icon
+            themeIcon.className = "fa-solid fa-sun";
+            themeToggle.setAttribute("aria-label", "Switch to light mode");
+        }
+    }
 
     // Load saved theme
     const savedTheme = localStorage.getItem("portfolio-theme");
 
     if (savedTheme === "light") {
         document.body.classList.add("light-mode");
-        themeIcon.className = "fa-regular fa-moon";
-        themeToggle.setAttribute("aria-label", "Switch to dark mode");
     }
+
+    updateThemeIcon(document.body.classList.contains("light-mode"));
 
     // Theme toggle button
     themeToggle.addEventListener("click", function () {
 
         document.body.classList.toggle("light-mode");
 
-        const isLightMode = document.body.classList.contains("light-mode");
+        const isLightMode =
+            document.body.classList.contains("light-mode");
 
-        if (isLightMode) {
+        updateThemeIcon(isLightMode);
 
-            // Change icon to moon
-            themeIcon.className = "fa-regular fa-moon";
-
-            // Save Light Mode
-            localStorage.setItem("portfolio-theme", "light");
-
-            themeToggle.setAttribute("aria-label", "Switch to dark mode");
-
-        } else {
-
-            // Change icon to sun
-            themeIcon.className = "fa-regular fa-sun";
-
-            // Save Dark Mode
-            localStorage.setItem("portfolio-theme", "dark");
-
-            themeToggle.setAttribute("aria-label", "Switch to light mode");
-
-        }
+        // Save selected theme
+        localStorage.setItem(
+            "portfolio-theme",
+            isLightMode ? "light" : "dark"
+        );
 
     });
 
 });
+
 
 // =================================
 // Mobile Hamburger Menu
