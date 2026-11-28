@@ -1,32 +1,32 @@
 # Muhammadh Ahnaff | Personal Portfolio
 
-<p align="center">
-  <img src="Assets/Images/portfolio.png" alt="Personal Portfolio Preview" width="800">
-</p>
+<div align="center">
 
-<h3 align="center">ICT Undergraduate | Aspiring Software Developer</h3>
+<img src="Assets/Images/portfolio.png" alt="Muhammadh Ahnaff Portfolio Preview" width="800">
 
-<p align="center">
-  <a href="https://ama-cypher.github.io/Muhammadh-Ahnaff-Portfolio/">Live Portfolio</a> •
-  <a href="https://github.com/AMA-Cypher">GitHub</a> •
-  <a href="https://www.linkedin.com/in/muhammadh-ahnaff-260844407/">LinkedIn</a>
-</p>
+### ICT Undergraduate | Aspiring Software Developer
+
+A personal portfolio website showcasing my education, technical skills, projects, and learning journey.
+
+[**Live Portfolio**](https://ama-cypher.github.io/Muhammadh-Ahnaff-Portfolio/) · [**GitHub**](https://github.com/AMA-Cypher) · [**LinkedIn**](https://www.linkedin.com/in/muhammadh-ahnaff-260844407/)
+
+</div>
 
 ---
 
-## About This Project
+## About
 
-This is my personal portfolio website, developed to showcase my educational background, technical skills, projects, experience, and professional journey as an ICT undergraduate at the University of Vavuniya.
+This is my personal portfolio website, developed to showcase my educational background, technical skills, academic projects, and professional development as an undergraduate ICT student at the University of Vavuniya.
 
-The website provides a professional online presence for recruiters, developers, and potential collaborators to explore my work and connect with me.
+It serves as my professional online presence, allowing recruiters, developers, and potential collaborators to explore my work, understand my technical interests, and connect with me.
 
 ## Technologies Used
 
 | Technology | Purpose |
 |---|---|
 | HTML5 | Website structure |
-| CSS3 | Styling, layouts, animations and responsive design |
-| JavaScript | Interactive functionality |
+| CSS3 | Styling and responsive design |
+| JavaScript | Interactivity and functionality |
 | Git | Version control |
 | GitHub | Source code hosting |
 | GitHub Pages | Website deployment |
@@ -34,18 +34,18 @@ The website provides a professional online presence for recruiters, developers, 
 
 ## Features
 
-- Responsive design for desktop, tablet and mobile
-- Dark mode and light mode
-- Interactive navigation menu
-- Profile picture showcase
-- About Me and Education sections
-- Technical skills showcase
-- Project portfolio
-- Experience and activities section
-- Downloadable CV
-- Contact form
-- GitHub and LinkedIn links
-- Smooth scrolling and animations
+- Responsive design for desktop, tablet, and mobile devices.
+- Dark mode and light mode with sun and moon icons.
+- Interactive navigation with a mobile-friendly menu.
+- Personal profile picture showcase.
+- About Me and Education sections.
+- Technical skills showcase.
+- Project portfolio with descriptions and images.
+- Experience and activities section.
+- Downloadable CV.
+- Functional contact form with Formspree integration.
+- GitHub and LinkedIn profile links.
+- Smooth scrolling and section animations.
 
 ## Portfolio Sections
 
@@ -54,57 +54,46 @@ The website provides a professional online presence for recruiters, developers, 
 | Home | Introduction and profile showcase |
 | About Me | Personal introduction and interests |
 | Education | Academic background |
-| Skills | Technical skills and tools |
+| Skills | Technical skills and technologies |
 | Projects | Academic and personal projects |
-| Experience | University activities and leadership |
-| Contact | Contact form and professional links |
+| Experience | Leadership and activities |
+| Contact | Contact form and social links |
 
-## Featured Projects
+## Projects
 
 ### 1. Smart Bookshelf Organizer
 
-An IoT-based bookshelf management system developed as a group project.
-
-**Technologies:** ESP32, RFID, Firebase, IoT
-
-**Key Features:**
-- RFID-based book identification
-- Book inventory management
-- Firebase integration
-- Real-time data communication
+- **Status:** Completed
+- **Type:** Group Project
+- **Technologies:** ESP32, RFID, Firebase, IoT
+- **Description:** An IoT-based bookshelf management system designed to organize and monitor books using RFID technology and Firebase.
 
 ### 2. AI University Assistant
 
-An AI-based university assistance project currently under development.
+- **Status:** In Development
+- **Technologies:** Python, FastAPI, Artificial Intelligence
+- **Description:** An AI-powered university assistant designed to help students access useful university-related information.
 
-**Technologies:** Python, FastAPI
+### 3. Personal Portfolio Website
 
-**Objective:** To develop an intelligent assistant that helps university students access useful academic information.
+- **Status:** Completed
+- **Technologies:** HTML5, CSS3, JavaScript
+- **Description:** A responsive personal portfolio website developed to present my academic background, technical skills, projects, and professional profile.
 
-### 3. Professional Portfolio Website
+### 4. AttendEase
 
-A responsive personal portfolio website developed to present my academic and professional profile.
+- **Status:** Planned
+- **Technologies:** C#, Windows Forms, SQL Server
+- **Description:** A planned student attendance management system designed to record attendance, calculate attendance percentages, and identify students with low attendance.
 
-**Technologies:** HTML5, CSS3, JavaScript
+## Project Status
 
-**Key Features:**
-- Dark and light themes
-- Responsive layouts
-- Interactive navigation
-- Project showcase
-- Contact form
-
-**Status:** Completed
-
-### 4. AttendEase – Student Attendance Management System
-
-A planned student attendance management system.
-
-**Planned Technologies:** C#, Windows Forms, SQL Server
-
-**Objective:** To manage student attendance records, calculate attendance percentages, and identify students with low attendance.
-
-**Status:** Planned
+| Project | Status |
+|---|---|
+| Smart Bookshelf Organizer | Completed |
+| AI University Assistant | In Development |
+| Personal Portfolio Website | Completed |
+| AttendEase | Planned |
 
 ## Education
 
@@ -117,11 +106,11 @@ University of Vavuniya, Sri Lanka
 ## Technical Skills
 
 - **Programming:** Java, Python, C, C++, C#, JavaScript
-- **Web Development:** HTML5, CSS3, JavaScript
-- **Databases:** MySQL, Firebase
-- **Frameworks and Tools:** FastAPI, Visual Studio, Visual Studio Code, XAMPP
-- **Version Control:** Git, GitHub
-- **Other Skills:** Computer Networking, Artificial Intelligence, Figma
+- **Web Development:** HTML5, CSS3
+- **Database:** MySQL, Firebase
+- **Tools:** Visual Studio Code, Visual Studio, Git, GitHub, XAMPP
+- **Design:** Figma
+- **Other Interests:** Artificial Intelligence, Computer Networking
 
 ## Run Locally
 
@@ -133,17 +122,17 @@ Follow these steps to run the portfolio website on your computer.
 git clone https://github.com/AMA-Cypher/Muhammadh-Ahnaff-Portfolio.git
 ```
 
-**2. Open the project folder**
+**2. Navigate to the project folder**
 
 ```bash
 cd Muhammadh-Ahnaff-Portfolio
 ```
 
-**3. Run the website**
+**3. Open the project**
 
 Open `index.html` in your browser.
 
-Alternatively, start a local Python server:
+Alternatively, start a local server:
 
 ```bash
 python -m http.server 8000
@@ -158,7 +147,7 @@ http://localhost:8000
 ## Project Structure
 
 ```text
-Muhammad-Ahnaff-Portfolio/
+Muhammadh-Ahnaff-Portfolio/
 │
 ├── Assets/
 │   ├── Documents/
@@ -182,27 +171,22 @@ Muhammad-Ahnaff-Portfolio/
 
 ## Live Deployment
 
-This portfolio website is deployed using GitHub Pages.
+The portfolio website is deployed using GitHub Pages.
 
-**Live Website:**  
-https://ama-cypher.github.io/Muhammadh-Ahnaff-Portfolio/
-
-Updates pushed to the `main` branch are published through GitHub Pages.
+**Website:** https://ama-cypher.github.io/Muhammadh-Ahnaff-Portfolio/
 
 ## Contact
 
-**Muhammadh Ahnaff**
-
-- Email: amanullahahnaff80@gmail.com
-- GitHub: https://github.com/AMA-Cypher
-- LinkedIn: https://www.linkedin.com/in/muhammadh-ahnaff-260844407/
+- **Email:** amanullahahnaff80@gmail.com
+- **GitHub:** https://github.com/AMA-Cypher
+- **LinkedIn:** https://www.linkedin.com/in/muhammadh-ahnaff-260844407/
 
 ---
 
-<p align="center">
-  Designed and developed by <strong>Muhammadh Ahnaff</strong>
-</p>
+<div align="center">
 
-<p align="center">
-  <em>Always Learning. Always Building.</em>
-</p>
+**Designed and Developed by Muhammadh Ahnaff**
+
+*Always Learning. Always Building.*
+
+</div>
